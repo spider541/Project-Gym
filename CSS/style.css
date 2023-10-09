@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+    text-shadow: 3px 4px 3px rgb(191 66 66);
+}
+
+header::before {
+    background: url('/pexels-sabel-blanco-1480520.jpg') no-repeat center center/cover;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.container {
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.container img {
+    height: 100px;
+    width: 100px;
+    filter: invert(1);
+}
+
+.container h3 {
+    position: absolute;
+    top: 67px;
+    left: 14px;
+    font-size: 16px;
+}
+
+.navbar {
+    width: 600px;
+    margin: auto;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 15px 23px;
+    font-size: 20px;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    transition: all 1s ease-out;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: red;
+}
+
+.right {
+    position: absolute;
+    top: 41px;
+    right: 19px;
+}
+
+.btn {
+    margin: 4px;
+    padding: 7px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #dd6612;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Anonymous Pro', monospace;
+    transition: all 1s ease-out;
+}
+
+.btn:hover {
+    color: red;
+}
+
+section {
+    position: absolute;
+    top: 200px;
+    left: 387px;
+    /* border: 2px solid red; */
+    height: 191px;
+    width: 725px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1 {
+    position: relative;
+    font-size: 37px;
+    text-align: center;
+    animation-name: rohit1;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    /* animation-timing-function: ease-out; */
+}
+@keyframes rohit1{
+    0%,80%{
+        transform:rotateX(360deg);
+    }
+}
+
+section p {
+    text-align: center;
+}
+
+.form {
+    border: 4px solid rgb(205 108 25);
+    width: 320px;
+    position: absolute;
+    top: 283px;
+    left: 20px;
+    text-align: center;
+    box-shadow: 5px 4px 8px #c37272, -5px -5px 8px #997116;
+}
+
+.form h3 {
+    font-size: 25px;
+}
+
+.form .input {
+    margin-top: 15px;
+}
+
+.form .input input {
+    text-align: center;
+    font-size: 16px;
+    padding: 4px;
+    border: 3px groove #dd6612;
+    border-radius: 15px;
+}
+
+.form .gender {
+    margin: 15px;
+}
+
+.form .sub {
+    margin-bottom: 12px;
+}
